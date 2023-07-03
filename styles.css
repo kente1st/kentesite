@@ -1,0 +1,30 @@
+h1{
+    color:blue;
+    font-size: 24px;
+    background-color: #f5f5f5;
+    text-align:center;
+
+}
+h3{
+    color:#f5f5f5;
+    font-size: larger;
+    background-color: maroon;
+    padding: flex;
+}
+header{
+
+    color: aliceblue;
+    font-size: 20px;
+    text-align: centre;
+    padding: 20px;
+    flex:3;
+}
+
+p{
+color: black;
+font-size: large;
+background-color:orange;
+text-align: center;
+
+}
+

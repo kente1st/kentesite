@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clickable Links</title>
+  <style>
+    .content {
+      display: none;
+      margin-top: 10px;
+    }
+    
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Clickable Links</h1>
+
+  <a href="#" class="link">Link 1</a>
+  <div class="content">Text information for Link 1</div>
+
+  <a href="#" class="link">Link 2</a>
+  <div class="content">Text information for Link 2</div>
+
+  <a href="#" class="link">Link 3</a>
+  <div class="content">Text information for Link 3</div>
+
+  <script>
+    // Get all link elements
+    const links = document.querySelectorAll('.link');
+
+    // Add click event listener to each link
+    links.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default link behavior
+        hideAllContent(); // Hide all content elements
+
+        const content = link.nextElementSibling;
+        content.classList.add('active'); // Show the associated content
+      });
+    });
+
+    // Hide all content elements
+    function hideAllContent() {
+      const contents = document.querySelectorAll('.content');
+      contents.forEach(content => {
+        content.classList.remove('active');
+      });
+    }
+  </script>
+</body>
+</html>

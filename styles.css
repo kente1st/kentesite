@@ -31,4 +31,19 @@ footer{
     color:black;
     background-color:dark-grey;
 }
+h2{
+    color:red;
+    text-align:centre:
+    font-size:20px:
+    }
+    img{
+        display:flex;
+        padding-top: 10px;
+padding-right: 20px;
+padding-bottom: 15px;
+padding-left: 30px;
+        margin:10px;
+        float:left;
+    }
+        
     
